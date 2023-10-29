@@ -1,0 +1,112 @@
+{% extends 'index.html' %} {% load static %} {% block extracss%}
+
+<link rel="stylesheet" href="{%static 'login.css' %}" type="text/css" />
+
+{% endblock %} {% block container %}
+
+<div class="background row">
+  <form action="" method="post" class="col-sm-12 mt-5">
+    {% csrf_token %}
+    <h3 class="text-center mb-2">Signup Here</h3>
+
+    <div class="col-sm-10">
+      <input
+        class="col-sm-12 mt-3"
+        type="text"
+        placeholder="First Name"
+        name="firstname"
+        id="firstname"
+      />
+    </div>
+
+    <div class="col-sm-10">
+      <input
+        class="col-sm-12 mt-3"
+        type="text"
+        placeholder="Last Name"
+        name="lastname"
+        id="lastname"
+      />
+    </div>
+
+    <div class="col-sm-10">
+      <input
+        class="col-sm-12 mt-3"
+        type="text"
+        placeholder="Username"
+        name="username"
+        id="username"
+      />
+    </div>
+
+    <div class="col-sm-10">
+      <input
+        class="col-sm-12 mt-3"
+        type="email"
+        placeholder="Email or Phone"
+        name="email"
+        id="email"
+      />
+    </div>
+
+    <div class="col-sm-10">
+      <select
+        class="col-sm-12 mt-3 form-select"
+        aria-label="Default select example"
+        name="company"
+      >
+        <option selected>Select Company</option>
+        <option value="Gitanshu Impex Pvt. Ltd.">Gitanshu Impex</option>
+        <option value="Citi Movers">Citi Movers</option>
+      </select>
+    </div>
+
+    <div class="col-sm-10">
+      <input
+        class="col-sm-12 mt-3"
+        type="password"
+        placeholder="Password"
+        id="password1"
+        name="password1"
+      />
+    </div>
+
+    <div class="col-sm-10">
+      <input
+        class="col-sm-12 mt-3"
+        type="password"
+        placeholder="Confirm Password"
+        id="password2"
+        name="password2"
+      />
+    </div>
+
+    <div class="col-sm-10">
+      <input
+        class="col-sm-12 mt-3"
+        type="text"
+        id="ipv4"
+        name="ipv4"
+        readonly="true"
+      />
+    </div>
+
+    <div class="col-sm-10">
+      <button class="col-sm-10 mt-3" type="submit">Signup</button>
+    </div>
+
+    <div class="col-sm-12 mt-5 text-center">
+      <a href="{% url 'login' %}">I have already account</a>
+    </div>
+  </form>
+</div>
+
+<script type="application/javascript">
+    function getIP(json) {
+      document.getElementById("ipv4").value = json.ip;
+    }
+  </script>
+  
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+
+{% endblock %}

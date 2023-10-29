@@ -1,0 +1,41 @@
+{% extends 'index.html' %} 
+
+{% load static %} 
+
+{% block extracss%}
+
+<link rel="stylesheet" href="{%static 'login.css' %}" type="text/css" />
+
+{% endblock %} 
+
+{% block container %}
+
+<div class="background row p-3">
+  <h1 class="text-center margin-top">You are now logged in!!!</h1>
+  <form method="post" class="col-sm-12 mx-auto">
+    {% csrf_token %}
+    <input
+      class="col-sm-12 text-center"
+      type="text"
+      id="ipv4"
+      name="ipv4"
+      readonly="true"
+    />
+    <div class="col-sm-10">
+      <button class="col-sm-10 mt-3" type="submit">Mark As Present</button>
+    </div>
+  </form>
+  <h4 class="text-center">Do not forget to scan the QR while leaving</h4>
+</div>
+
+<script type="application/javascript">
+  function getIP(json) {
+    document.getElementById("ipv4").value = json.ip;
+  }
+</script>
+
+<script
+  type="application/javascript"
+  src="https://api.ipify.org?format=jsonp&callback=getIP"
+></script>
+{% endblock %}

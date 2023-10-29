@@ -1,0 +1,41 @@
+.background{
+    height: 100vh;
+    background-color: #F34646;
+}
+
+h3{
+    font-family: 'Source Code Pro';
+    font-weight: bold;
+    color: white;
+    opacity: 0.87;
+}
+
+input{
+    font-family: 'Poppins';
+    color: rgb(48, 48, 48, 0.67);
+    padding: 0.6rem 0.3rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;  
+}
+
+button{
+    background-color: FFBCE1;
+    color: #F34646;
+    font-family: 'Poppins';
+    padding: 0.3rem 0.3rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+}
+
+span{
+    color: white;
+    opacity: 0.87;
+}
+
+a{
+    color: #FFBCE1;
+    opacity: 0.97;
+}

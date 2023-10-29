@@ -1,0 +1,63 @@
+.background{
+    height: 100vh;
+    background-color: #F34646;
+}
+
+.margin-top{
+    margin-top: 10rem;
+}
+
+h3{
+    font-family: 'Source Code Pro';
+    font-weight: bold;
+    color: white;
+    opacity: 0.87;
+}
+
+input{
+    font-family: 'Poppins';
+    color: rgb(48, 48, 48, 0.67);
+    padding: 0.6rem 0.3rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;  
+}
+
+button{
+    background-color: FFBCE1;
+    color: #F34646;
+    font-family: 'Poppins';
+    padding: 0.3rem 0.3rem;
+    border-radius: 0.8rem;
+    border: none;
+    outline: none;
+}
+
+span{
+    color: white;
+    opacity: 0.87;
+}
+
+a{
+    color: #FFBCE1;
+    opacity: 0.97;
+}
+
+select{
+    background-color: FFBCE1;
+    color: rgb(48, 48, 48, 0.67);
+    font-family: 'Poppins';
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.8rem;
+    border: none;
+    outline: none;  
+    font-size: 0.8rem;      
+}
+
+h1, h4{
+    font-family: 'Source Code Pro';
+    font-weight: 900;
+    color: white;
+    opacity: 0.87;
+}

@@ -1,0 +1,17 @@
+{% extends 'index.html' %} 
+
+{% load static %} 
+
+{% block extracss%}
+
+<link rel="stylesheet" href="{%static 'login.css' %}" type="text/css" />
+
+{% endblock %} 
+
+{% block container %}
+<div class="background row p-3">
+    <h1 class="text-center margin-top">IP Address Not Matching</h1>
+    <h1 class="text-center margin-top">Cannot log attendance</h1>
+</div>
+
+{% endblock %}
