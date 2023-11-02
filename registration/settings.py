@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-4r*t&*rep9$uf64z6@*rz9u6g-t($lue4%qtdpbref%(j*#865
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['172.105.52.119']
+ALLOWED_HOSTS = ['attendance.a-brand.in']
 
 SECURE_CROSS_ORIGIN_OPENER_POLICY = None
 
